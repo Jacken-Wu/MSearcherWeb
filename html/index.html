@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content: https://ssl.gstatic.com; 
+    media-src * blob: 'self' http://* 'unsafe-inline' 'unsafe-eval'; 
+    style-src * 'self' 'unsafe-inline'; 
+    img-src * 'self' data: content:; 
+    connect-src * blob:;">
+    <title>MSearcher</title>
+    <link rel="stylesheet" href="./css/image.css">
+    <link rel="stylesheet" href="./css/bottomBar.css">
+    <link rel="stylesheet" href="./css/bottonHover.css">
+</head>
+
+<body>
+    <div id="img-container"></div>
+    <div id="bottom-bar">
+        <button type="button" id="download-img" class="left-bottom-button">
+            <div class="button-cover"></div>
+        </button>
+        <div id="search-bar">
+            <input type="text" id="search-input" class="input-box" placeholder="请输入关键字">
+        </div>
+        <button type="button" id="search-button" class="config-button">
+            <p>搜索</p>
+            <div class="button-cover"></div>
+        </button>
+    </div>
+    <div class="bottom-empty"></div>
+
+    <script src="./js/electronAPI.js"></script>
+    <script src="./js/renderer.js"></script>
+</body>
+
+</html>
