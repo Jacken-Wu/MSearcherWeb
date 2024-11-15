@@ -58,11 +58,7 @@ async function update(filterTexts = '') {
 function imgSelect() {
     // 获取当前div
     console.log(this.classList);
-    if (this.classList.contains('selected')) {
-        console.log('d');
-        downloadImgButton.click();
-        this.classList.remove('selected');
-    } else if (lastDivSelected) {
+    if (lastDivSelected) {
         lastDivSelected.classList.remove('selected');
     }
     lastDivSelected = this;
