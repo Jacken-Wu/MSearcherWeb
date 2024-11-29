@@ -5,8 +5,6 @@ const downloadImgButton = document.getElementById('download-img');
 
 let lastDivSelected = null;
 
-let filterTextsBuffer = [];
-
 update();
 
 async function update(filterTexts = '') {
